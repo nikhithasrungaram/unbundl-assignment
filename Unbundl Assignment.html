@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Landing — Test Assignment</title>
+    <meta name="description" content="Responsive landing page built from Figma (HTML, CSS, JS)" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#hero" aria-label="Homepage">
+                <!-- Inline simple SVG logo placeholder -->
+                <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect width="24" height="24" rx="6" fill="currentColor"></rect>
+                </svg>
+                <span class="brand-name">Brand</span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">Build a beautiful landing page — fast</h1>
+                <p class="hero-sub">Pixel-perfect, responsive, and accessible. Built using only HTML, CSS, and JavaScript.</p>
+                <div class="hero-cta">
+                    <a class="btn btn-primary" href="#pricing">Get Started</a>
+                    <a class="btn btn-ghost" href="#features">See Features</a>
+                </div>
+                <ul class="hero-stats" aria-hidden="true">
+                    <li><strong>500+</strong><span>Users</span></li>
+                    <li><strong>120+</strong><span>Projects</span></li>
+                    <li><strong>4.9</strong><span>Rating</span></li>
+                </ul>
+            </div>
+
+            <div class="hero-media" aria-hidden="true">
+                <!-- Placeholder illustration -->
+                <div class="mockup">
+                    <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet" role="img">
+                        <rect width="100%" height="100%" rx="16" fill="#f1f5f9"></rect>
+                        <g transform="translate(40,40)">
+                            <rect width="520" height="40" rx="8" fill="#e2e8f0"></rect>
+                            <rect y="64" width="520" height="260" rx="12" fill="#fff"></rect>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+        <div class="container section-inner">
+            <header class="section-head">
+                <h2>Powerful features</h2>
+                <p>Everything you need to build a modern landing page quickly.</p>
+            </header>
+
+            <div class="features-grid">
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">⚡</div>
+                    <h3>Fast</h3>
+                    <p>Optimized markup and styles to keep load times low.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">🎨</div>
+                    <h3>Pixel-perfect</h3>
+                    <p>Faithful translation of the design into responsive code.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">🔒</div>
+                    <h3>Accessible</h3>
+                    <p>Semantic HTML and keyboard-friendly interactions.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">🧩</div>
+                    <h3>Customizable</h3>
+                    <p>Easy to tweak variables and layout to match your brand.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Looks great on phones, tablets, and desktops.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="icon" aria-hidden="true">☁️</div>
+                    <h3>Deploy-ready</h3>
+                    <p>Works with GitHub Pages, Vercel or Netlify out of the box.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+        <div class="container about-grid">
+            <div class="about-media reveal">
+                <!-- small image placeholder -->
+                <svg viewBox="0 0 300 200" preserveAspectRatio="xMidYMid meet" role="img">
+                    <rect width="100%" height="100%" rx="12" fill="#eef2ff"></rect>
+                    <circle cx="60" cy="80" r="30" fill="#c7d2fe"></circle>
+                    <rect x="120" y="40" width="140" height="14" rx="6" fill="#c7d2fe"></rect>
+                    <rect x="120" y="64" width="110" height="12" rx="6" fill="#e0e7ff"></rect>
+                </svg>
+            </div>
+
+            <div class="about-content">
+                <h2>About this project</h2>
+                <p>This demo follows a Figma design and demonstrates how to convert it into a working landing page using plain HTML, CSS, and JavaScript.</p>
+                <ul class="about-list">
+                    <li>Semantic HTML structure</li>
+                    <li>CSS custom properties for easy theming</li>
+                    <li>Mobile-first responsive styles</li>
+                </ul>
+                <a href="#features" class="btn btn-outline">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+        <div class="container section-inner">
+            <header class="section-head">
+                <h2>What people say</h2>
+                <p>Short quotes from customers who like the page.</p>
+            </header>
+
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-card reveal">
+                    <p>"This template saved me hours — clean and easy to adapt."</p>
+                    <cite>— Aisha, Product Manager</cite>
+                </blockquote>
+
+                <blockquote class="testimonial-card reveal">
+                    <p>"Well-structured code and responsive setup. Highly recommended."</p>
+                    <cite>— Dev Team, StartUp</cite>
+                </blockquote>
+
+                <blockquote class="testimonial-card reveal">
+                    <p>"Deployment was straightforward and the design matches Figma closely."</p>
+                    <cite>— Ravi, Freelancer</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section alt">
+        <div class="container section-inner">
+            <header class="section-head">
+                <h2>Simple pricing</h2>
+                <p>Choose a plan that fits your needs.</p>
+            </header>
+
+            <div class="pricing-grid">
+                <div class="plan-card reveal">
+                    <h3>Starter</h3>
+                    <p class="price">Free</p>
+                    <ul>
+                        <li>Single page</li>
+                        <li>Basic support</li>
+                        <li>Community access</li>
+                    </ul>
+                    <a class="btn btn-primary" href="#">Select</a>
+                </div>
+
+                <div class="plan-card popular reveal">
+                    <div class="badge">Popular</div>
+                    <h3>Pro</h3>
+                    <p class="price">₹799 / month</p>
+                    <ul>
+                        <li>Multiple pages</li>
+                        <li>Email support</li>
+                        <li>Figma-to-code help</li>
+                    </ul>
+                    <a class="btn btn-primary" href="#">Get Pro</a>
+                </div>
+
+                <div class="plan-card reveal">
+                    <h3>Agency</h3>
+                    <p class="price">₹1999 / month</p>
+                    <ul>
+                        <li>Collaboration</li>
+                        <li>Priority support</li>
+                        <li>Custom builds</li>
+                    </ul>
+                    <a class="btn btn-success" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#hero" class="brand">
+                    <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                        <rect width="24" height="24" rx="6" fill="currentColor"></rect>
+                    </svg>
+                    <span class="brand-name">Brand</span>
+                </a>
+                <p>© <span id="year"></span> Brand. All rights reserved.</p>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
